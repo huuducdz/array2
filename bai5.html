@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let amounta=prompt('độ dài củng mảng a');
+let a=[];
+let i=0;
+for (i=0;i<amounta;i++) {
+let num = prompt('enter something');
+a[i] = num;
+}
+console.log(a);
+let amountb=prompt('độ dài củng mảng b');
+let b=[];
+let y=0;
+for (y=0;y<amountb;y++) {
+let num = prompt('enter something');
+b[y] = num;
+}
+let flag;
+if (a.length==b.length) {
+for (x=0;x<a.length;x++) {
+if (a[x] != b[x]) {
+flag=false;
+break;
+} else {
+flag=true;
+}
+}
+} else {
+flag=false ;
+}
+if (flag=true) {
+console.log('a = b')
+} else  {
+console.log(flag)
+}
+</script>
+
+</body>
+</html>
